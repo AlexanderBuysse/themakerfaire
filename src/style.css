@@ -1,0 +1,98 @@
+@import '../src/css/vars.css';
+@import '../src/css/reset.css';
+@import '../src/css/tutorial/strucTutorialHeader.css';
+@import '../src/css/tutorial/styleTutorialHeader.css';
+@import '../src/css/tutorial/strucTutorialStep.css';
+@import '../src/css/tutorial/styleTutorialStep.css';
+@import '../src/css/home/strucHome.css';
+@import '../src/css/home/styleHome.css';
+@import '../src/css/shop/strucShop.css';
+@import '../src/css/shop/styleShop.css';
+
+/*stylelint-disable*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/*stylelint-ensable*/
+
+html {
+  box-sizing: inherit;
+  font-size: 62.5%;
+  filter: saturate(1.2);
+}
+
+body {
+  background-color: var(--backgroundWhite);
+  font-family: brandon-grotesque,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.1rem;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: var(--mainBlack);
+}
+
+.button-home {
+  border: solid var(--mainColor) .6rem;
+  padding: .2rem 4rem;
+}
+
+em {
+  color: var(--mainColor);
+}
+
+.error {
+  color:  rgb(177, 80, 80);
+  margin-bottom: .3rem;
+}
+
+.opacity {
+  opacity: 0;
+}
+
+.text-center {
+  text-align: center;
+  padding: 0 3vw;
+}
+
+.button-home:hover {
+  transition: font-weight 1s ease-in-out;
+  font-weight: 800;
+}
+
+.button {
+  background-color: var(--mainColor);
+  padding: .6rem 0;
+  width: 15rem;
+  text-align: center;
+  z-index: 2;
+
+  @media (--only-biggerSmall-screen) {
+    text-align: center;
+    margin-left: 1rem;
+    max-height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.d3 {
+  color: var(--mainBlack);
+  text-align: center;
+  text-overflow: clip;
+  text-shadow: -3px 0 1px rgba(30, 242, 242, 0.507) , 3px 0 1px rgba(246, 5, 9, 0.5);
+}
+
+.display-none {
+  display: none;
+}
+
+.white-color {
+  color: var(--backgroundWhite);
+}

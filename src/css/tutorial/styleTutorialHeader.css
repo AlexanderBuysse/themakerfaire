@@ -1,0 +1,46 @@
+.tutorial-one::after {
+  content: '';
+  background-image: url(../../assets/img/arrow-mobile.png);
+  width: 100vw;
+  height: 8.8rem;
+  background-position: center;
+}
+
+.header-background {
+  background-image: url(../../assets/img/lineheader-mobile.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.background {
+  background-image: url(../../assets/img/lineheader-mobile.svg);
+  background-size: cover;
+  width: 100%;
+  padding: 6rem 0;
+}
+
+.header__title {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 6vw;
+}
+
+.header__title-bold {
+  font-size: 13vw;
+}
+
+.section-title {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2.4rem;
+}
+
+.header__item {
+  width: 10rem;
+  height: 9rem;
+  margin-left: 1rem;
+  background-color: var(--mainBlack);
+}

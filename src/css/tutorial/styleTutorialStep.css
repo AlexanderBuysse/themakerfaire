@@ -1,0 +1,363 @@
+.step-black-max {
+  background-color: var(--mainBlack);
+  width: 100vw;
+}
+
+.step-max {
+  width: 100vw;
+}
+
+.step-black {
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 15vw 5vw;
+
+  @media (--only-biggerMedium-screen) {
+    padding: 7vw 2.5vw;
+  }
+}
+
+.step {
+  padding: 15vw 5vw;
+  max-width: 110rem;
+  margin: 0 auto;
+
+  @media (--only-biggerMedium-screen) {
+    padding: 7vw 2.5vw;
+  }
+}
+
+.step-interact {
+  border: dashed .5rem grey;
+}
+
+.black {
+  background-color: var(--mainBlack);
+  border: solid var(--mainColor) .3rem;
+  padding: .2rem;
+}
+
+.middle-real {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.rolmeter-icon {
+  cursor: url(../../assets/img/rolmeter-cursor.png) 30 30, auto;
+}
+
+.saw-icon {
+  cursor: url(../../assets/img/saw-icon.png) 30 30, auto;
+}
+
+.rolmeter {
+  height: 25rem;
+  width: 20rem;
+  display: grid;
+  grid-template-rows: 0 0;
+  grid-template-columns: 0 0;
+}
+
+.pos-hand {
+  top: 15%;
+  right: -42%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+}
+
+.rotate {
+  transform: rotate(100deg);
+  margin-top: 6rem;
+}
+
+.dashed-grey {
+  border: dashed .5rem grey;
+  padding: .5rem;
+  margin-bottom: 2rem;
+}
+
+.arrow-after {
+  content: '';
+  background-image: url(../../assets/img/arrow-reverse-mobile.png);
+  height: 8.8rem;
+  width: 100vw;
+  background-position: center;
+}
+
+.step__title-number {
+  color: var(--mainBlack);
+  background-color: var(--backgroundWhite);
+  border-radius: 20rem;
+  width: 6rem;
+  height: 6rem;
+  margin-left: 1rem;
+}
+
+.step__title-number-white {
+  background-color: var(--mainBlack);
+  color: var(--backgroundWhite);
+  border-radius: 20rem;
+  width: 6rem;
+  height: 6rem;
+  margin-left: 1rem;
+}
+
+.step__goal {
+  background-color: var(--mainColor);
+  padding: 2rem 0;
+}
+
+.step-one__text {
+  color: var(--backgroundWhite);
+}
+
+.step-one__text-black {
+  color: var(--mainblack);
+}
+
+.stepGoal-title {
+  font-size: 3.3rem;
+}
+
+.step__goal-label {
+  margin-top: 1.5rem;
+  display: block;
+  position: relative;
+  padding-left: 3.5rem;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.step__goal-label .step__goal-check {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #eee;
+}
+
+.step__goal-label:hover .step__goal-check ~ .checkmark {
+  background-color: #ccc;
+}
+
+.step__goal-label .step__goal-check:checked ~ .checkmark {
+  background-color: var(--mainBlack);
+}
+
+.checkmark::after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.step__goal-label .checkmark::after {
+  left: .9rem;
+  top: .5rem;
+  width: .5rem;
+  height: 1rem;
+  border: solid white;
+  border-width: 0 .3rem .3rem 0;
+  transform: rotate(45deg);
+}
+
+.step__goal-label .step__goal-check:checked ~ .checkmark::after {
+  display: block;
+}
+
+.step__title {
+  display: flex;
+  align-items: center;
+  margin-left: 4rem;
+}
+
+.step-sources__item {
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--backgroundWhite);
+  margin-right: 1rem;
+}
+
+.step-sources__item-white {
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--mainBlack);
+  margin-right: 1rem;
+}
+
+.step-sources__image {
+  transform: rotate(50deg);
+}
+
+.step-interact__image {
+  transform: rotate(15deg);
+  cursor: pointer;
+
+  @media (--only-520-screen) {
+    transform: rotate(105deg);
+    margin-top: 7rem;
+    margin-left: -5.5rem;
+  }
+}
+
+.max {
+  @media (--only-520-screen) {
+    max-width: 46rem;
+  }
+}
+
+.step-interact__image-white {
+  transform: rotate(15deg);
+}
+
+.step-interact__saw {
+  background-color: var(--backgroundWhite);
+
+  @media (--only-520-screen) {
+    width: 7.8rem;
+    height: 100%;
+  }
+}
+
+.step-interact__wood {
+  background-color: var(--backgroundWhite);
+}
+
+.step-interact__wood-two {
+  background-color: var(--backgroundWhite);
+  padding: 1.2rem;
+}
+
+.step-interact__wood-black {
+  padding: 1.5rem;
+  background-color: var(--mainBlack);
+  position: relative;
+}
+
+.step__two-interact__yellowLine {
+  padding: 2rem;
+}
+
+.step-interact__yellowLine {
+  border: solid var(--mainColor) .3rem;
+  padding: .2rem;
+  width: 21rem;
+  height: 7.2rem;
+
+  @media (--only-520-screen) {
+    width: 7.8rem;
+    height: 100%;
+  }
+}
+
+.step-interact__yellowLine-meter-saw {
+  position: relative;
+  border: solid var(--mainColor) .3rem;
+  padding: .2rem;
+}
+
+.step-interact__yellowLine-wood {
+  border: solid var(--mainColor) .3rem;
+  padding: .2rem;
+}
+
+.step-interact__button {
+  background-color: var(--mainColor);
+  border-radius: 20rem;
+  width: 4.4rem;
+  height: 4.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  cursor: grab;
+}
+
+.arrow-before {
+  content: '';
+  background-image: url(../../assets/img/arrow-mobile.png);
+  width: 100vw;
+  height: 8.8rem;
+  background-position: center;
+}
+
+.box {
+  border-radius: .5em;
+  padding: 1rem;
+  cursor: move;
+}
+
+.boxtarget {
+  background-color: rgba(221, 221, 221, .37);
+}
+
+.box-width {
+  width: 20rem;
+  height: 17rem;
+}
+
+.box-width-two {
+  width: 5rem;
+  height: 5rem;
+}
+
+.box-image-two {
+  content: '';
+  background-image: url(../../assets/img/kleinhout-nagels.png);
+  background-size: 5rem 5rem;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.box.over {
+  border: .3rem dotted #666;
+}
+
+[draggable] {
+  user-select: none;
+}
+
+.box-image {
+  content: '';
+  background-image: url(../../assets/img/hout-staptwee.png);
+  background-size: 20rem 17.4rem;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.step4-interact {
+  grid-area: content2;
+}
+
+.procent-height {
+  height: 100%;
+}
+
+.grid-wood {
+  grid-area: wood;
+}
+
+.margin-left {
+  margin-left: 11rem;
+}
